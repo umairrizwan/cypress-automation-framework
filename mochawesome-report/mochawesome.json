@@ -1,0 +1,100 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-08-31T19:32:36.939Z",
+    "end": "2022-08-31T19:33:00.942Z",
+    "duration": 24003,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5f1736da-65f4-4350-a9b0-69c43f7badca",
+      "title": "",
+      "fullFile": "cypress\\integration\\examples\\Test.js",
+      "file": "cypress\\integration\\examples\\Test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9b7d465b-9ede-490c-969f-1893a9d352e1",
+          "title": "Air Malta E2E Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Select first available flight date",
+              "fullTitle": "Air Malta E2E Test Select first available flight date",
+              "timedOut": null,
+              "duration": 21709,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Cypress.on('uncaught:exception', (err, runnable) => {\n  return false;\n});\ncy.visit(Cypress.env('url')); //Homepage logo assertion\nlandpage.getHomePageTitle().should('have.attr', 'src', this.data.HomepageLogoPath);\nlandpage.getAcceptBttn().click();\nlandpage.getOrigin().click();\nlandpage.getFromDestTxtField().type(this.data.fromCity);\nlandpage.getAvailableAirportFrom().click();\nlandpage.getDestination().click();\nlandpage.getToDestTextField().type(this.data.toCity);\nlandpage.getAvailableAirportTo().click();\nlandpage.getOnewayDropDown().click();\nlandpage.getOneWayOption().click();\nlandpage.getCalander().click();\nlandpage.getDatePickFromCalander().click({\n  force: true\n});\nlandpage.getSearchFlights().click(); //URL Assertion\ncy.url().should('eq', this.data.expectedSearchUrl); //Title Assertion\nsearchpage.getSearchTitle().should('have.text', this.data.expectedtitle);\nsearchpage.getFlexibleDates().click(); //Title Assertion\nflexible.getFlixiblePageTitle().should('have.text', this.data.FlexiblePageTitle);\ncy.SearchForFirstFlight();",
+              "err": {},
+              "uuid": "95355b61-1f9e-490e-9137-c41ed898af91",
+              "parentUUID": "9b7d465b-9ede-490c-969f-1893a9d352e1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "95355b61-1f9e-490e-9137-c41ed898af91"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 21709,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}

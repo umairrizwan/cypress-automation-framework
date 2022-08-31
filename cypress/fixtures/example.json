@@ -1,0 +1,8 @@
+{
+  "fromCity": "Vienna",
+  "toCity":"Malta",
+  "expectedtitle":"Outbound Flight",
+  "expectedSearchUrl":"https://book.airmalta.com/flights/oneway",
+  "HomepageLogoPath":"/cache-buster-1658471092/build/images/km_white.svg",
+  "FlexiblePageTitle":"Flexible dates"
+}
