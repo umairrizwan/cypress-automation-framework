@@ -7,7 +7,5 @@
 <h3>  To generate the report execute the following command </h3>
 .\node_modules\.bin\cypress run --reporter mochawesome --spec cypress\integration\examples\Test.js 
 
-<h2> The report will look like this </h2>
-![image](https://user-images.githubusercontent.com/63503754/187774361-0c254bc3-863d-4306-ab21-583ae87e11db.png)
-
-  
+<h4> The report will look like this </h4>
+![report](https://user-images.githubusercontent.com/63503754/187775470-c12f9bb5-ce68-477d-b36a-d9000507ad17.jpg)
