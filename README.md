@@ -3,6 +3,7 @@
 
 1. npm install cypress --save-dev <br />
 2. npx cypress open >> Then execute the Test.js <br />
+3. npx cypress run <br />
 
 <h3>  Type npx cypress run to execute the test </h3>
 <h3>  To generate the report execute the following command </h3>
