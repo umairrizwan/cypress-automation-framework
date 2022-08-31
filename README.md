@@ -1,8 +1,8 @@
 # cypress-automation-framework
 <h2>  Download the code and execute the following commands: </h2>
-1. npm -i init <br />
-2. npm install cypress --save-dev <br />
-3. npx cypress open >> Then execute the Test.js <br />
+
+1. npm install cypress --save-dev <br />
+2. npx cypress open >> Then execute the Test.js <br />
 
 <h3>  Type npx cypress run to execute the test </h3>
 <h3>  To generate the report execute the following command </h3>
